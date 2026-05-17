@@ -1,0 +1,208 @@
+{
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "create": "Create a Workshop",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Log in",
+    "cta": "Join the beta"
+  },
+  "hero": {
+    "badge": "Beta launching · Join the pioneers",
+    "title": "Transform your training into",
+    "titleHighlight": "learning adventures",
+    "subtitle": "Evalia converts your course materials into adaptive, gamified learning journeys. Your learners progress faster, stay motivated, and you measure it all in real time.",
+    "cta": "Join the beta for free",
+    "ctaSecondary": "See how it works",
+    "social": "Already {count} trainers on the waitlist"
+  },
+  "stats": {
+    "completion": "average completion rate",
+    "engagement": "more engagement",
+    "time": "saved per trainer",
+    "satisfaction": "learner satisfaction"
+  },
+  "howItWorks": {
+    "badge": "Simple as 1-2-3",
+    "title": "From your content to an engaging workshop",
+    "subtitle": "in 3 steps",
+    "step1Title": "Upload your content",
+    "step1Desc": "PDF, Word, video, images... Evalia accepts all your existing formats. No need to start from scratch.",
+    "step2Title": "AI structures it for you",
+    "step2Desc": "Our AI identifies key knowledge blocks and builds an adaptive learning path with quizzes, challenges, and spaced repetition.",
+    "step3Title": "Your learners progress",
+    "step3Desc": "They advance at their own pace on web or mobile, unlock badges, and you track their progress in real time."
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Everything you need,",
+    "titleHighlight": "nothing you don't",
+    "f1Title": "Adaptive AI",
+    "f1Desc": "The learning path adjusts in real time based on each learner's level and mistakes. No one gets left behind.",
+    "f2Title": "Smart Gamification",
+    "f2Desc": "Points, badges, leaderboards, streaks. Playful engagement serving real learning objectives.",
+    "f3Title": "Multi-format",
+    "f3Desc": "PDF, Word, PowerPoint, video, images — import what you already have. Evalia does the rest.",
+    "f4Title": "Real-time tracking",
+    "f4Desc": "Clear dashboards to see who's progressing, who's stuck, and which concepts are causing issues.",
+    "f5Title": "Automated assessments",
+    "f5Desc": "Auto-generate and auto-grade certification exams. Save hours every week.",
+    "f6Title": "Instant deployment",
+    "f6Desc": "Share a link with your learners. No installation, no configuration on their end."
+  },
+  "testimonials": {
+    "badge": "Trusted by",
+    "title": "What our beta testers say"
+  },
+  "cta": {
+    "title": "Ready to reinvent your training?",
+    "subtitle": "Join the trainers already transforming learning with Evalia. Free beta access, limited spots.",
+    "button": "Join the waitlist",
+    "noCb": "No credit card required · Priority access"
+  },
+  "waitlist": {
+    "title": "Join the waitlist",
+    "subtitle": "Free beta access · Limited spots · No credit card",
+    "namePlaceholder": "Your first name",
+    "emailPlaceholder": "your@email.com",
+    "rolePlaceholder": "Your role",
+    "roleFormateur": "Independent trainer",
+    "roleEntreprise": "L&D Manager",
+    "roleEcole": "School / University",
+    "roleAutre": "Other",
+    "button": "Join the beta",
+    "sending": "Signing up...",
+    "success": "🎉 You're on the list! We'll be in touch very soon.",
+    "error": "Something went wrong. Try again or contact us."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Simple, transparent,",
+    "titleHighlight": "no surprises",
+    "subtitle": "Start for free, scale up when you need it.",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "annualDiscount": "-20%",
+    "popular": "Most popular",
+    "starter": {
+      "name": "Starter",
+      "price": "Free",
+      "period": "forever",
+      "desc": "To test and validate your first workshop.",
+      "cta": "Start for free",
+      "features": [
+        "1 active workshop",
+        "Up to 30 learners",
+        "PDF and Word formats",
+        "Basic quizzes and assessments",
+        "Simplified dashboard"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "priceMonthly": "€49",
+      "priceAnnual": "€39",
+      "period": "/ month",
+      "desc": "For trainers who want to go to the next level.",
+      "cta": "Try free for 14 days",
+      "features": [
+        "Unlimited workshops",
+        "Up to 200 learners",
+        "All formats (PDF, Word, video, images)",
+        "Full adaptive AI",
+        "Advanced gamification (badges, leaderboards)",
+        "Automated exams + AI grading",
+        "Full analytics dashboard",
+        "Priority support"
+      ]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "desc": "For training organizations and L&D teams.",
+      "cta": "Contact us",
+      "features": [
+        "Unlimited learners",
+        "White label (your logo, your colors)",
+        "SSO / HRIS integration",
+        "Dedicated API",
+        "Guaranteed SLA",
+        "Onboarding support",
+        "Custom invoicing"
+      ]
+    }
+  },
+  "create": {
+    "badge": "For creators",
+    "title": "Create your first workshop",
+    "titleHighlight": "in under 10 minutes",
+    "subtitle": "No need to be a pedagogy expert. Evalia automatically structures your expertise into an engaging learning journey.",
+    "step1": {
+      "title": "1. Import your materials",
+      "desc": "Drag and drop your existing files. PDF courses, PowerPoint presentations, training videos, Word documents — everything is accepted."
+    },
+    "step2": {
+      "title": "2. Customize the learning path",
+      "desc": "The AI proposes a smart structure. Adjust the order, add steps, configure difficulty. You stay in control of the content."
+    },
+    "step3": {
+      "title": "3. Invite your learners",
+      "desc": "A link, a QR code, or a direct integration into your existing tool. Your learners access it without complex sign-up."
+    },
+    "step4": {
+      "title": "4. Track and improve",
+      "desc": "Visualize progress, identify bottlenecks, adjust content. The feedback loop is continuous and automatic."
+    },
+    "formats": "Supported formats",
+    "cta": "Create my first workshop",
+    "ctaNote": "Free · No credit card"
+  },
+  "about": {
+    "badge": "Our mission",
+    "title": "Making learning",
+    "titleHighlight": "irresistible",
+    "story": "Evalia was born from a simple observation: professional training is too often boring, too long, and too quickly forgotten. Trainers spend hours creating content that learners just skim through.\n\nWhat if technology could change that? AI can now transform any content into an adaptive, engaging learning path — like Duolingo did for languages, but for any skill domain.\n\nEvalia is that tool. Built for trainers who have the expertise but not the time. For learners who genuinely want to progress. For organizations that need to measure the impact of every euro invested in training.",
+    "values": {
+      "title": "Our values",
+      "v1Title": "Pedagogy first",
+      "v1Desc": "Gamification and AI are means, not ends. Every feature is designed to improve real learning outcomes.",
+      "v2Title": "Radical simplicity",
+      "v2Desc": "A trainer must be able to create their first workshop in 10 minutes, with zero prior training.",
+      "v3Title": "Measurement & transparency",
+      "v3Desc": "You deserve to know whether your training actually works. We give you the data to prove it."
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Let's talk about your",
+    "titleHighlight": "training project",
+    "subtitle": "Question, demo, partnership — we reply within 24h.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Tell us how we can help...",
+    "button": "Send message",
+    "sending": "Sending...",
+    "success": "Message received! We'll reply within 24h.",
+    "error": "Error sending. Try contact@evalia.app"
+  },
+  "footer": {
+    "tagline": "Learning, reinvented.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "pricing": "Pricing",
+    "create": "Create a Workshop",
+    "about": "About",
+    "contact": "Contact",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "copyright": "© {year} Evalia. All rights reserved.",
+    "madeWith": "Made with ❤️ in France"
+  },
+  "legal": {
+    "title": "Legal Notice & Terms",
+    "lastUpdated": "Last updated: May 2025"
+  }
+}

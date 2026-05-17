@@ -82,7 +82,7 @@ export default function Navbar() {
               href={`/${otherLocale}${pathWithoutLocale}`}
               className="text-sm font-medium text-gray-500 hover:text-violet-600 transition-colors px-2 py-1 rounded-md hover:bg-violet-50"
             >
-              {otherLocale.toUpperCase()}
+              {locale.toUpperCase()}
             </Link>
 
             {/* Auth state */}

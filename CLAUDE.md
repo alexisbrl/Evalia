@@ -3,7 +3,7 @@
 > Ce fichier est l'unique source de vérité pour tout développement sur ce projet. Il doit être lu intégralement à chaque nouvelle conversation.
 > **Toute modification structurante apportée au projet (stack, structure, conventions, décisions produit) doit être reflétée ici.**
 >
-> Dernière mise à jour : 27/05/2026
+> Dernière mise à jour : 31/05/2026
 
 ---
 
@@ -40,7 +40,7 @@ Cette opération ne doit jamais pouvoir être annulée, quelle que soit la situa
 **Nom :** Culture (nom de travail — nom produit final : à confirmer)
 **Type :** Application SaaS d'apprentissage — générateur pédagogique avec IA
 **Plateforme :** Web en premier (iOS/Android hors MVP)
-**Repo GitHub :** https://github.com/alexisbrl/culture
+**Repo GitHub :** https://github.com/alexisbrl/Culture
 **Lancer le dev :** `npm run dev` depuis ce dossier
 
 ### Notion
@@ -62,6 +62,7 @@ Pages hors-projet à ne pas consulter :
 | Framework | Next.js 16 (App Router) |
 | Langage | TypeScript (strict) |
 | Styling | Tailwind CSS v4 |
+| Typographie | Inter Tight (corps) × Caveat (accents manuscrits) — utilitaire `.font-script` |
 | Auth | Clerk (`@clerk/nextjs`) |
 | Base de données | Supabase (`@supabase/supabase-js`) |
 | UI | shadcn/ui + Base UI (`@base-ui/react`) |
@@ -85,15 +86,16 @@ culture/
 │   │   ├── [locale]/           # Routes i18n (next-intl)
 │   │   │   ├── about/
 │   │   │   ├── contact/
-│   │   │   ├── create/
+│   │   │   ├── create/         # Création d'atelier (dépôt fichiers + identité + visibilité) [MODIFIÉ PAR CLAUDE - 31/05/2026]
 │   │   │   ├── dashboard/
-│   │   │   ├── garden/          # Jardin iso — page principale (logo Evalia) [MODIFIÉ PAR CLAUDE - 31/05/2026]
+│   │   │   ├── garden/          # Jardin « Terra Nil » — page principale (logo Culture) [MODIFIÉ PAR CLAUDE - 31/05/2026]
 │   │   │   ├── legal/
 │   │   │   ├── pricing/
 │   │   │   ├── profile/
+│   │   │   ├── search/         # Recherche d'atelier (ateliers loisir Culture) [MODIFIÉ PAR CLAUDE - 31/05/2026]
 │   │   │   ├── sign-in/
 │   │   │   ├── sign-up/
-│   │   │   ├── workshops/
+│   │   │   ├── workshops/       # + [id]/session = session d'exercice (QCM) [MODIFIÉ PAR CLAUDE - 31/05/2026]
 │   │   │   └── layout.tsx
 │   │   ├── actions/            # Server actions
 │   │   ├── api/                # API routes (API-first)
@@ -146,7 +148,7 @@ culture/
 
 ## 6. GIT & GITHUB
 
-**Repo :** https://github.com/alexisbrl/culture
+**Repo :** https://github.com/alexisbrl/Culture
 **Branche principale :** `main`
 
 ### Règles
@@ -369,10 +371,10 @@ Un propriétaire peut activer le statut Premium sur son atelier. C'est une opér
 - Fichiers exemples disponibles pour créer son premier atelier
 - **Règle de déverrouillage des fonctionnalités :** les fonctionnalités sont masquées par défaut et révélées au moment où elles deviennent pertinentes, pas après un délai fixe.
 
-**Home page = Jardin** (`/garden`) — page principale après connexion, cible du logo Evalia
+**Home page = Jardin** (`/garden`) — page principale après connexion, cible du logo Culture
 - **Le jardin est indépendant des ateliers** [MODIFIÉ PAR CLAUDE - 31/05/2026] : atelier = cours où l'on gagne de l'XP ; jardin = lieu où l'on cultive des plantes qui grandissent grâce à l'XP gagné. Les arbres ne sont PAS liés à un atelier.
-- Système visuel : blocs isométriques 3D épais (tranche terre/roche), détection automatique des bords → masse solide quelle que soit la forme. **Agrandissement par placement manuel** des tuiles (mode édition, coût en XP), extensible à l'infini.
-- État de la V1 : mock localStorage (`culture.garden.v1`), schéma Supabase jardin à créer ultérieurement. Le panneau de droite (infos) reste à retravailler.
+- **Style « Terra Nil »** : une **île de terre fixe** (forme immuable) posée dans l'**eau** (la mer est le fond par défaut), sans ombres. On ne modifie pas le contour de l'île ; on **peint la surface** des cases via un inventaire (herbe par défaut / chemin / herbe haute / terre / eau-lac / pont). On pose ensuite des objets (arbres, maison 2×2, montagne 3×3) et des cosmétiques. Mode édition avec déplacer/ranger.
+- Implémentation : `src/app/[locale]/garden/{page.tsx, GardenClient.tsx, gardenEngine.ts}` (SVG isométrique). Mock **localStorage** `culture.garden.v2` ; schéma Supabase jardin + croissance via XP réel à créer ultérieurement.
 - Donne accès à : recherche d'atelier, profil, paramètres, toutes les autres fonctionnalités
 - Visuellement chaleureux et apaisant (nature / lofi) — doit donner envie d'y revenir
 
@@ -640,12 +642,16 @@ Sessions d'examens standardisés dans des **centres certifiés**. Chaque examen 
 
 | Élément | Spécification |
 |---|---|
-| **Logo** | Un arbre (symbolise la croissance et le développement) |
-| **Couleur principale** | Blanc `#FFFFFF` |
-| **Couleur secondaire** | Vert (croissance) — utilisé avec parcimonie |
-| **Couleur tertiaire** | Marron (neutralité) — utilisé succinctement |
-| **Ton général** | Mix ludique / professionnel. Atmosphère paisible évoquant la nature ou le lofi. Présentations avec émotions fortes. |
+| **Nom de marque** | **Culture** (le nom « Evalia » a été retiré de l'app le 31/05/2026) |
+| **Logo** | Un germe/arbre vert (SVG) + mot « Culture » en noir. Symbolise la croissance. [MODIFIÉ PAR CLAUDE - 31/05/2026] |
+| **Typographie** | Inter Tight (corps) × Caveat (accents manuscrits ambre) |
+| **Couleur principale** | Crème `#fcf9f2` / Blanc — fond apaisant |
+| **Couleur secondaire** | Vert Culture `#5f8a3f` (profond `#4f6b40`, doux `#7a9968`) — couleur de marque (`--primary`, `gradient-primary`) |
+| **Couleur tertiaire** | Ambre/bois `#a87a3a` (accents) · encre `#2d2a24` (texte) |
+| **Ton général** | Mix ludique / professionnel. Atmosphère paisible évoquant la nature ou le lofi. |
+
+> **Migration thème en cours** [31/05/2026] : l'app passe du violet (« Evalia ») au vert/crème (« Culture »). Fondations faites (typo, logo, `--primary`, renommage). Pages encore en classes `violet-*` à migrer page par page : Dashboard, Atelier, Profil, Paramètres, Pricing.
 
 ---
 
-*Dernière mise à jour : 27/05/2026*
+*Dernière mise à jour : 31/05/2026*
